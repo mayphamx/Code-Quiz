@@ -2,15 +2,6 @@ window.alert("Hi! Welcome to my code quiz :)");
 var fun = window.confirm("Please click start and answer the questions by clicking on the answer.");
 console.log(fun);
 
-// let start = document.querySelector("#start");
-
-// start.addEventListener('click', function() {
-// 	let timerId = setInterval(function() {
-// 		console.log('!')
-// 	}, 1000);
-// });
-
-// array of quiz questions
 var timerElement = document.getElementById("timer");
 var leaderboards = [];
 
@@ -104,9 +95,9 @@ function checkAnswer(answerIndex) {
 function endQuiz() {
   clearInterval(timerInterval);
   endTime = timeLeft;
-  timerElement.style.display = "none";
-  optionElement.style.display = "none";
-  initialElement.style.display = "block";
-  submitElement.style.display = "block";
   questionElement.textContent = "You got " + score + " out of 4 questions correct with " + endTime + " seconds left.";
+  initialElement.style.display = "block";
+  timerElement.style.display = "none";
+  submitElement.style.display = "block";
+  optionElement.style.display = "none";
 };
