@@ -25,6 +25,16 @@ var quizQuestions = [
     options: ["blue", "green", "yellow","red"],
     answer: 1,
   },
+  {
+    question: "What color is the sun?",
+    options: ["blue", "green", "yellow","red"],
+    answer: 2,
+  },
+  {
+    question: "What color is a firetruck?",
+    options: ["blue", "green", "yellow","red"],
+    answer: 3,
+  },
 ];
 
 let currentQuestionIndex = 0;
